@@ -11,7 +11,7 @@ public class samplevfcontroller {
     public samplevfcontroller(){
         jtk = new Job_Task__c();
         urlvalue=ApexPages.currentPage().getParameters().get('id');
-        system.debug('urlvalue == '+urlvalue);
+        system.debug('urlvalue sample == '+urlvalue);
     }
     public PageReference saveDetails() {
         try
