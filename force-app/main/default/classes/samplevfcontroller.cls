@@ -16,7 +16,7 @@ public class samplevfcontroller {
     public PageReference saveDetails() {
         try
         {
-            system.debug('saveDetails === '+urlvalue);
+            system.debug('Branch 3 === '+urlvalue);
             job =  [select id,name,Job_Auto_Number__c, CreatedDate from Job__c where id =:urlvalue  limit 1];
             jtk.Job__c = urlvalue;
             jtk.Schedule_Roles__c = 'Admin';
