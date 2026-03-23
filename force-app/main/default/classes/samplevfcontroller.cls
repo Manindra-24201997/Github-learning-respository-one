@@ -11,7 +11,7 @@ public class samplevfcontroller {
     public samplevfcontroller(){
         jtk = new Job_Task__c();
         urlvalue=ApexPages.currentPage().getParameters().get('id');
-        system.debug('urlvalue sample == '+urlvalue);
+        system.debug('u made change final changes for deployment 1 == '+urlvalue);
     }
     public PageReference saveDetails() {
         try
@@ -21,7 +21,7 @@ public class samplevfcontroller {
             jtk.Job__c = urlvalue;
             jtk.Schedule_Roles__c = 'Admin';
             insert jtk;
-            system.debug('jtk === '+jtk);
+            system.debug('made change final changes for deployment 1 === '+jtk);
             if(!Test.isRunningTest()){  if(myfile.body != null ){
                 Attachment SpecAttachment = new Attachment(parentId = job.Id, name=myfile.name, body = myfile.body);
                 /* insert the attachment */
